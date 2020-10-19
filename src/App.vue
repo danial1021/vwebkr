@@ -59,7 +59,7 @@ export default {
       }
     }
   },
-  created () {
+  created () { // data가 할당된 시점
     this.subscribe()
   },
   methods: {
