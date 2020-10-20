@@ -5,7 +5,7 @@
       <site-title :title="site.title"></site-title>
       <v-spacer/>
     </v-app-bar>
-    <v-navigation-drawer app v-model="drawer">
+    <v-navigation-drawer app v-model="drawer" width="400">
       <site-menu :items="site.menu"></site-menu>
     </v-navigation-drawer>
     <v-main>
@@ -59,7 +59,7 @@ export default {
       }
     }
   },
-  created () { // data가 할당된 시점
+  created () {
     this.subscribe()
   },
   methods: {
